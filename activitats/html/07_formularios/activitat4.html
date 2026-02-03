@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Buscador de Cámaras Fotográficas</title>
+</head>
+<body>
+<h1>Encuentra tu cámara ideal</h1>
+<p>Utiliza los filtros para ajustar la búsqueda a tus necesidades profesionales o personales.</p>
+<form action="/buscar" method="GET">
+<div>
+<label for="query">Palabra clave:</label><br>
+<input type="text" id="query" name="query" placeholder="Ej: Canon EOS, 4K, Full Frame...">
+</div>
+<br>
+<div>
+<label for="tipo">Tipo de cuerpo:</label><br>
+<select id="tipo" name="tipo">
+<option value="todas">Todas las categorías</option>
+<option value="mirrorless">Mirrorless (Sin espejo)</option>
+<option value="dslr">Réflex (DSLR)</option>
+<option value="compacta">Compacta avanzada</option>
+<option value="formato_medio">Formato Medio</option>
+</select>
+</div>
+<br>
+<fieldset>
+<legend>Marcas preferidas</legend>
+<input type="checkbox" id="sony" name="marca" value="sony">
+<label for="sony">Sony</label><br>
+<input type="checkbox" id="canon" name="marca" value="canon">
+<label for="canon">Canon</label><br>
+<input type="checkbox" id="nikon" name="marca" value="nikon">
+<label for="nikon">Nikon</label><br>
+<input type="checkbox" id="fujifilm" name="marca" value="fujifilm">
+<label for="fujifilm">Fujifilm</label>
+</fieldset>
+<br>
+<div>
+<label for="precio_max">Presupuesto máximo: <span id="val_precio">1500</span>€</label><br>
+<input type="range" id="precio_max" name="precio_max" min="200" max="10000" step="100" value="1500">
+</div>
+<br>
+<div>
+<label for="resolucion">Resolución mínima (Megapíxeles):</label><br>
+<input type="number" id="resolucion" name="resolucion" min="12" max="100" placeholder="Ej: 24">
+</div>
+<br>
+<fieldset>
+<legend>Estado</legend>
+<input type="radio" id="nuevo" name="estado" value="nuevo" checked>
+<label for="nuevo">Nuevo</label>
+<input type="radio" id="usado" name="estado" value="usado">
+<label for="usado">Segunda mano</label>
+</fieldset>
+<br>
+<button type="submit">Buscar cámaras</button>
+<button type="reset">Limpiar filtros</button>
+</form>
+</body>
+</html>
