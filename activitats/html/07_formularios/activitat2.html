@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Configurador de Pedido - Altavoces</title>
+</head>
+<body>
+<h1>Configura tu Altavoz</h1>
+<p>Selecciona las especificaciones para realizar tu pedido:</p>
+<form action="/procesar-pedido" method="POST"> 
+<fieldset>
+<legend>Modelo de Altavoz</legend>
+<input type="radio" id="r4" name="modelo" value="R4" checked>
+<label for="r4">R4</label><br>        
+<input type="radio" id="r5" name="modelo" value="R5">
+<label for="r5">R5</label><br>          
+<input type="radio" id="sr1" name="modelo" value="SR1">
+<label for="sr1">SR1</label>
+</fieldset>
+<br>
+<div>
+<label for="potencia">Potencia máxima (entre 50 y 100 W):</label>
+<input type="number" id="potencia" name="potencia" min="50" max="100" value="50" required>
+</div>
+<br>
+<div>
+<input type="checkbox" id="bluetooth" name="bluetooth" value="si">
+<label for="bluetooth">Incluir conexión Bluetooth</label>
+</div>
+<br>
+<div>
+<label for="color">Elige el color del acabado:</label>
+<input type="color" id="color" name="color" value="#000000">
+</div>
+<br>
+<hr>
+<br>
+<button type="submit">Enviar pedido</button>
+</form>
+</body>
+</html>
