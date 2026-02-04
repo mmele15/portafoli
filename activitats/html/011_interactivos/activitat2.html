@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<title>Cercador de Smartphones</title>
+</head>
+<body>
+<header>
+<h1>Cercador de Telèfons Intel·ligents</h1>
+<p>Troba el teu dispositiu ideal utilitzant els filtres interactius.</p>
+</header>
+<main>
+<form action="/cerca">           
+<section>
+<label for="triar-marca">Marca del dispositiu:</label><br>
+<input list="marques" id="triar-marca" name="marca" placeholder="Comença a escriure...">
+<datalist id="marques">
+<option value="Apple">
+<option value="Samsung">
+<option value="Xiaomi">
+<option value="Google Pixel">
+<option value="OnePlus">
+<option value="Sony">
+</datalist>
+</section>
+<br>
+<section>
+<label for="preu">Rang de pressupost:</label><br>
+<select id="preu" name="rang-preu">
+<option value="tots">Tots els preus</option>
+<option value="baixa">Gama d'entrada (&lt; 250€)</option>
+<option value="mitja">Gama mitjana (250€ - 600€)</option>
+<option value="alta">Gama alta (600€ - 1000€)</option>
+<option value="premium">Premium (&gt; 1000€)</option>
+</select>
+</section>
+<br>
+<section>
+<details>
+<summary>Més opcions de cerca</summary>
+<p>
+<input type="checkbox" id="5g" name="tecnologia" value="5g">
+<label for="5g">Només models amb connexió 5G</label>
+</p>
+<p>
+<label>Estat de la bateria desitjat:</label><br>
+<meter min="0" max="100" low="20" high="80" optimum="100" value="90">90%</meter>
+</p>
+</details>
+</section>
+<br>
+<button type="submit">Cercar Smartphones</button>
+</form>
+</main>
+</body>
+</html>
