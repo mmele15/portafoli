@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<title>Currículum Vitae Interactiu</title>
+</head>
+<body>
+<header>
+<h1>Perfil Professional: El Meu Currículum</h1>
+<p>Resum d'aptituds i estat personal mitjançant elements d' <abbr title="Hypertext Markup Language">HTML</abbr>.</p>
+</header>
+<main>
+<section>
+<h2>Habilitats Tècniques</h2>
+<div>
+<label for="html-skill">Nivell de coneixement en HTML:</label><br>
+<progress id="html-skill" max="100" value="70">70%</progress>
+</div>
+<br>
+<div>
+<label for="design-skill">Conneixement sobre Photoshop/Gimp:</label><br>
+<progress id="design-skill" max="100" value="65">65%</progress>
+</div>
+</section>
+<br>
+<hr>
+<section>
+<h2>Estat i Característiques</h2>
+<div>
+<label for="bellesa">Bellesa:</label><br>
+<meter id="bellesa" min="0" max="100" low="30" high="80" optimum="100" value="60">60%</meter>
+</div>
+<br>
+<div>
+<label for="gana">Gana:</label><br>
+<meter id="gana" min="0" max="100" low="20" high="60" optimum="10" value="15">Poca gana</meter>
+</div>
+<br>
+<div>
+<label for="salut">Salut:</label><br>
+<meter id="salut" min="0" max="100" low="40" high="70" optimum="100" value="95">Excel·lent</meter>
+</div>
+</section>
+<br>
+<section>
+<button popovertarget="finestra-contacte">Contacta amb mi</button>
+<dialog id="finestra-contacte" popover>
+<h3>Dades de contacte</h3>
+<p>Correu: mmele@inscaparrella.cat</p>
+<button popovertarget="finestra-contacte" popovertargetaction="hide">Tancar</button>
+</dialog>
+</section>
+</main>
+</body>
+</html>
