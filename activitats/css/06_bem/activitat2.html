@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<title>Sistema de Comentaris - Sense Width</title>
+<style>
+:root {
+--color-bord: #ccc;
+--color-text: #333;
+--color-usuari: #2980b9;
+}
+section {
+border: 2px solid var(--color-bord);
+margin-left: 1rem;
+}
+h2 {
+font-size: 1.5rem;
+border-bottom: 1px solid var(--color-bord);
+}
+form {
+margin-left: 2rem;
+}
+textarea {
+border: 1px solid var(--color-bord);
+font-size: 1rem;
+}
+article {
+border-left: 4px solid var(--color-usuari);
+margin-left: 2rem;
+}
+.nom-usuari {
+font-weight: bold;
+color: var(--color-usuari);
+font-size: 1.1rem;
+}
+.data {
+font-size: 0.8rem;
+color: gray;
+}
+</style>
+</head>
+<body>
+<section>
+<h2>Comentaris</h2>
+<form action="#" method="post">
+<label for="comentari-nou">Deixa la teva opinió:</label><br>
+<textarea id="comentari-nou" name="comentari" rows="4" placeholder="Escriu aquí..."></textarea><br>
+<button type="submit">Publicar comentari</button>
+</form>
+<br>
+<article>
+<p class="nom-usuari">Anna García</p>
+<p class="data">Publicat el 15 de febrer de 2026</p>
+<p>M'ha encantat l'article sobre el Teide! Molt informatiu.</p>
+</article>
+<article>
+<p class="nom-usuari">Marc Sala</p>
+<p class="data">Publicat el 16 de febrer de 2026</p>
+<p>Increïble història, encara que una mica tètrica el final...</p>
+</article>
+</section>
+</body>
+</html>

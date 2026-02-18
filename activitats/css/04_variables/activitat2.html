@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<title>Rectangle amb Variables Locals</title>
+<style>
+.rectangle {
+--altura: 150px;
+height: var(--altura);
+width: calc(var(--altura) * 2);
+background-color: #3498db;
+border: 5px solid #2980b9;
+margin-left: 2.5rem;
+}
+</style>
+</head>
+<body>
+<div class="rectangle"></div>
+</body>
+</html>
