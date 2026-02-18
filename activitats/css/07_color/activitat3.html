@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Simplest Blog Replica</title>
+    <style>
+        :root {
+            --color-accent: #ff3333; /* Vermell del logo i botons */
+            --color-text-suau: #888;
+            --color-titols: #333;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: var(--color-titols);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* CAPÇALERA */
+        header {
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .logo-vermell {
+            color: var(--color-accent);
+        }
+
+        /* SECCIÓ PRESENTACIÓ */
+        .presentacio {
+            margin-left: 2rem;
+        }
+
+        .nom-destacat {
+            background-color: var(--color-accent);
+            color: white;
+            font-weight: bold;
+        }
+
+        .enllac-secundari {
+            color: var(--color-accent);
+            text-decoration: none; /* Treiem el subratllat */
+        }
+
+        /* LLISTA D'ARTICLES */
+        main {
+            margin-left: 2rem;
+        }
+
+        article {
+            border-bottom: 1px solid #eee;
+            margin-bottom: 2rem;
+        }
+
+        .data {
+            color: var(--color-text-suau);
+            font-style: italic;
+        }
+
+        .titol-post {
+            color: var(--color-accent);
+            font-weight: bold;
+            text-decoration: underline; /* Aquí sí que el volem */
+        }
+
+        .llegir-mes {
+            color: var(--color-accent);
+            font-style: italic;
+            text-decoration: underline;
+        }
+        footer {
+            color: var(--color-text-suau);
+            font-size: 0.8rem;
+            margin-left: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p class="logo">SIMPLEST<span class="logo-vermell">BLOG</span></p>
+    </header>
+    <section class="presentacio">
+        <p>Hi, I'm <span class="nom-destacat">Fernando Moreira</span>, a Frontend Engineer.</p>
+        <p>Enthusiast performance, responsive design and usability... -- <a href="#" class="enllac-secundari">about me</a></p>
+    </section>
+    <main>
+        <h3>Writing..</h3>
+        <article>
+            <p>
+                <span class="data">Dec 10, 2015</span> — 
+                <span class="titol-post">Welcome to Jekyll!</span> — 
+                You'll find this post in your _posts directory. Go ahead and edit it... 
+                <a href="#" class="llegir-mes">Read more</a>
+            </p>
+        </article>
+        <article>
+            <p>
+                <span class="data">Nov 26, 2015</span> — 
+                <span class="titol-post">Lorem ipsum dolor sit</span> — 
+                Pellentesque habitant morbi tristique senectus et netus et malesuada... 
+                <a href="#" class="llegir-mes">Read more</a>
+            </p>
+</article>
+</main>
+<footer>
+<p>©2016 All rights reserved. Made with <span class="titol-post">Jekyll</span> and ♥</p>
+</footer>
+</body>
+</html>
