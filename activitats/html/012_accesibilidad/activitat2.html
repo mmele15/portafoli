@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<title>Formulari de Registre Accessible</title>
+</head>
+<body>
+<header>
+<h1>Registra't al nostre servei</h1>
+<p>Completa el formulari per crear el teu compte.</p>
+</header>
+<main>
+<form action="/registrar" method="POST">
+<fieldset>
+<legend>Dades Personals</legend>
+<div>
+<label for="nom-usuari">Nom d'usuari:</label><br>
+<input type="text" id="nom-usuari" name="username" required aria-describedby="ajuda-username">
+<p id="ajuda-username">Serà el nom amb què iniciaràs sessió.</p>
+</div>
+<br>
+<div>
+<label for="correu">Correu electrònic:</label><br>
+<input type="email" id="correu" name="email" required>
+</div>
+<br>
+<div>
+<label for="contrasenya">Contrasenya:</label><br>
+<input type="password" id="contrasenya" name="password" placeholder="Mínim 8 caràcters" required aria-describedby="ajuda-password">
+<p id="ajuda-password">Utilitza una combinació de lletres, números i símbols.</p>
+</div>
+<br>
+<div>
+<label for="confirmar-contrasenya">Confirma la contrasenya:</label><br>
+<input type="password" id="confirmar-contrasenya" name="confirm_password" placeholder="Repeteix la contrasenya" required>
+</div>
+</fieldset>
+<br>
+<fieldset>
+<legend>Preferències</legend>
+<p>Quin tipus de contingut t'interessa?</p>
+<div>
+<input type="checkbox" id="noticies" name="interes[]" value="noticies">
+<label for="noticies">Notícies i actualitat</label>
+</div>
+<div>
+<input type="checkbox" id="ofertes" name="interes[]" value="ofertes">
+<label for="ofertes">Ofertes i promocions</label>
+</div>
+<div>
+<input type="checkbox" id="tutorials" name="interes[]" value="tutorials">
+<label for="tutorials">Tutorials i guies</label>
+</div>
+<br>
+<div>
+<label for="pais">El teu país de residència:</label><br>
+<select id="pais" name="country" required>
+<option value="">Selecciona un país</option>
+<option value="es">Espanya</option>
+<option value="fr">França</option>
+<option value="de">Alemanya</option>
+<option value="uk">Regne Unit</option>
+<option value="altres">Altres</option>
+</select>
+</div>
+</fieldset>
+<br>
+<div>
+<input type="checkbox" id="condicions" name="accept_terms" required>
+<label for="condicions">Accepto les <a href="#termes-servei" target="_blank">Condicions del Servei</a>.</label>
+</div>
+<br>
+<button type="submit">Crear compte</button>
+<button type="reset">Netejar formulari</button>
+</form>
+</main>
+</body>
+</html>
